@@ -23,7 +23,7 @@ class TweeetsController < ApplicationController
 
   # POST /tweeets or /tweeets.json
   def create
-    @tweeet = current_user.tweets.build(tweeet_params)
+    @tweeet = current_user.tweeets.build(tweeet_params)
 
     respond_to do |format|
       if @tweeet.save
